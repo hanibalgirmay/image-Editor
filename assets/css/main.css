@@ -193,4 +193,24 @@ body {
     margin-left: 0px;
   }
 }
+
+.footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.footer a {
+  background-color: #5372f0;
+  padding: .2rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 /*# sourceMappingURL=main.css.map */
