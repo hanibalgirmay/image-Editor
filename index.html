@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor | Javascript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script> -->
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Image Editor</h2>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label class="title">Filters</label>
+                    <div class="options">
+                        <button class="active">Brightness</button>
+                        <button>Saturation</button>
+                        <button>Invertion</button>
+                        <button>Grayscale</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brightness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <div class="range">
+                            <input type="range" min="0" max="200" value="100" class="slider-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="rotate">
+                    <label class="title">Rotate & Flip</label>
+                    <div class="options">
+                        <button><i class="fa solid fa-rotate-left"></i></button>
+                        <button><i class="fa solid fa-rotate-right"></i></button>
+                        <button><i class="bx bx-reflect-horizontal"></i></button>
+                        <button><i class='bx bx-reflect-vertical'></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-img">
+                <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="preview-img">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-filter">Reset Filters</button>
+            <div class="row">
+                <button class="choose-img">Select Image</button>
+                <button class="save-img">Save Image</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
