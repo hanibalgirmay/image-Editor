@@ -113,6 +113,7 @@ body {
       max-width: 490px;
       max-height: 335px;
       display: flex;
+      overflow: hidden;
       justify-content: center;
       align-items: center;
       border: 1px dashed #ccc;
@@ -139,6 +140,10 @@ body {
         background-color: #fff;
     }
 
+    input[type="file"] {
+      display: none;
+    }
+
     .reset-filter {
         color: #6c757d;
         border: 1px solid #6c757d;
@@ -154,6 +159,11 @@ body {
         background-color: #5372f0;
     }
   }
+}
+
+.container.disable :where(.editor-panel, .reset-filter, .save-img){
+    opacity: 0.6;
+    pointer-events: none;
 }
 
 @media screen and (max-width: 768px) {
